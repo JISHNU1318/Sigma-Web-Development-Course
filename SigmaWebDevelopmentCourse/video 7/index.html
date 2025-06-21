@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Forms - Let's Learn It</title>
+</head>
+<body>
+    <h1>My First Form</h1>
+    <form action="post">
+        <div>
+        <label for="Username">Enter your Username</label>
+        <input type="text" name="username" placeholder="Enter your Username" autofocus>
+        </div>
+        
+        <div> 
+        <input type="radio" id="female" name="gender" value="female">
+        <label for="female">Female</label>
+        <input type="radio" id="male" name="gender" value="male">
+        <label for="male">Male</label>
+        </div>
+    </form>
+
+    <div>
+        <input type="checkbox">Subscribe for Newsletter
+    </div>
+    <div>
+        <label for="comment">Enter Your Comments</label>
+        <br>
+        <textarea name="comment" rows="4" cols="40">Enter your Comments....</textarea>
+    </div>
+
+    <div>
+        <select name="Language">
+            <option value="Java">Java</option>
+            <option value="Python">Python</option>
+            <option value="C++">C++</option>
+        </select>
+    </div>
+</body>
+</html>
