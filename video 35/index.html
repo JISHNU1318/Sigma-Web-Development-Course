@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+/* .box:first-child{
+    background-color: red;
+}
+
+.box::first-line{
+    color: blue; */
+    .boxes *{
+        color: blue;
+        border: 2px solid black;
+    }
+
+    /* p,a .box[data-color="primary"]{
+        padding-top: 45px;
+    } */
+     /* .box:nth-child(odd){
+        background-color: aquamarine;
+     } */
+      /* .box:nth-last-child(1){
+        background-color: yellow;
+      } */
+       .boxes::before{
+        content: "Jishnu is great";
+       }
+
+       .boxes::after{
+        content: "I belong to the house Biswas";
+        color: red;
+       }
+
+       .boxes::selection{
+        background-color: black;
+        color: aqua;
+       }
+
+       .box::first-letter{
+        color: peru;
+        font-size: 45px;
+       }
+
+       
+       input::placeholder{
+        color: rgb(187, 187, 215);
+        font-size: 15px;
+       }
+}
+    </style>
+</head>
+<body>
+ <div data-color="primary" class="boxes">
+    <div class="box">Lorem ipsum dolor sit amet consectetur adipisicing elit. Aperiam, a delectus? Nostrum delectus sapiente quidem, perferendis beatae commodi facilis! Quaerat rem fugit aspernatur tempora harum est quis neque atque, nam nulla provident aperiam quod totam pariatur velit vel ab! Consequuntur hic deserunt facilis a accusantium?</div>
+    <div class="box">I am a box</div>
+    <div class="box">I am a box</div>
+    <input type="text" placeholder="Type your name Here">
+ </div>
+    
+ </div>
+</body>
+</html>
